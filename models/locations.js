@@ -5,9 +5,12 @@ const mongoose = require('mongoose')
 
 //Location Schema
 const locationSchema = new mongoose.Schema ({
-    region: String,
+    regionMaori: String,
+    regionEnglish: String,
     island: String,
+    img: String,
     season: String,
+    activities: ['String', 'String'],
     visited: Boolean,
     rating: Number
 })
