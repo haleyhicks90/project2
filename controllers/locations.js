@@ -50,12 +50,13 @@ router.get('/locations/:id/edit', (req, res) => {
 })
 
 //index route (GET)
-app.get('/locations', (req, res) => {
+router.get('/locations', (req, res) => {
     Location.find({}, (error, allLocations) => {
-        res.render('index.ejs',
-            {
-                locations: allLocations
-            }
+        res.render('index.ejs'
+        // ,
+        //     {
+        //         locations: allLocations
+        //     }
         )
     })
 })
