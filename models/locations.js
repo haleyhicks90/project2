@@ -9,8 +9,7 @@ const locationSchema = new mongoose.Schema ({
     regionEnglish: String,
     island: String,
     img: String,
-    season: String,
-    activities: ['String', 'String'],
+    activities: String,
     visited: Boolean,
     rating: Number
 })
