@@ -7,6 +7,7 @@ const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
 require('dotenv').config()
+const locationsController = require('./controllers/locations.js')
 //___________________
 //Port
 //___________________
@@ -43,6 +44,8 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
+
+app.use('/locations', locationsController)
 
 
 //___________________
