@@ -5,6 +5,15 @@
         <title></title>
     </head>
     <body>
-        <h1>Locations Edit Page</h1>
+        <h1>Edit Page</h1>
+        <form>
+            Name: <input type="text" name="name" value="<%=band.name%>" /><br>
+            Origin: <input type="text" name="origin" value="<%=band.origin%>" /><br>
+            Single: <input type="text" name="single" value="<%=band.single%>" /><br>
+            Genre: <input type="text" name="genre" value="<%=band.genre%>" /><br>
+            Notable Themes: <input type="text" name="themes" value="<%=band.themes%>" /><br>
+            New Video: <input type="text" name="video" value="" /><br>
+            <input type="submit" value="Update Band">
+        </form>
     </body>
 </html>

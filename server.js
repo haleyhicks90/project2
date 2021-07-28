@@ -2,17 +2,21 @@
 //Dependencies
 //___________________
 const express = require('express');
-const methodOverride  = require('method-override');
-const mongoose = require ('mongoose');
-const app = express ();
+const methodOverride = require('method-override');
+const mongoose = require('mongoose');
+const app = express();
 const db = mongoose.connection;
 require('dotenv').config()
-const locationsController = require('./controllers/locations.js')
+const musicController = require('./controllers/controllers_music.js')
+
+
 //___________________
 //Port
 //___________________
 // Allow use of Heroku's port or your own local port, depending on the environment
 const PORT = process.env.PORT || 3003;
+
+
 
 //___________________
 //Database
@@ -45,16 +49,16 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
-app.use('/locations', locationsController)
+app.use(musicController)
 
 
 //___________________
 // Routes
 //___________________
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
-  // res.render('index.ejs')
+app.get('/index' , (req, res) => {
+  // res.send('Hello World!');
+  res.render('index.ejs')
 });
 
 //___________________

@@ -2,9 +2,27 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Modern Mountain Sounds</title>
     </head>
     <body>
-        <h1>Locations Index Page</h1>
+        <h1>Index Page</h1>
+
+        <ul>
+            <% for (let i = 0; i < bands.length; i ++) { %>
+                <li>
+                    <a href="/index/<%=bands[i]._id%>">
+                        <%=bands[i].name%>
+                    </a>
+                    <form action="/index/<%=bands[i]._id%>?_method=DELETE" method=POST>
+                        <input type="submit" value="DELETE">
+                    </form>
+                    <a href="/index/<%=bands[i]._id%>/edit">Edit</a>
+                </li>
+            <% } %>
+        </ul>
+
+        <nav>
+            <a href="/index/new">Add a Band</a>
+        </nav>
     </body>
 </html>

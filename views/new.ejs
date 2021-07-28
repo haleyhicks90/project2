@@ -2,9 +2,20 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Add a new band</title>
     </head>
     <body>
-        <h1>Locations New Page</h1>
+        <h1>New Page</h1>
+
+<!-- below form data will post new band to index page -->
+        <form action="/index" method="POST">
+            Band Name: <input type="text" name="name" /><br>
+            Single: <input type="text" name="single" /><br>
+            Origin: <input type="text" name="origin" /><br>
+            Genre: <input type="text" name="genre" /><br>
+            Video: <input type="text" name="video" /><br>
+            <input type="submit" value="Add Band"><br>
+        </form>
+
     </body>
 </html>
