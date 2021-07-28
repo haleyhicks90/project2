@@ -28,6 +28,14 @@ router.get('/index/', (req, res) => {
     })
 })
 
+//update route (PUT)
+router.put('/index/:id', (req, res) => {
+    Band.findByIdAndUpdate(req.params.id, req.body, (error, updatedBand) => {
+        res.redirect('/index')
+    })
+    // res.send(req.body)
+})
+
 //delete route (DELETE)
 router.delete('/index/:id', (req, res) => {
     Band.findByIdAndRemove(req.params.id, (error, data) => {
@@ -54,78 +62,86 @@ router.get('/index/new', (req, res) => {
 })
 
 //seed route
-router.get('index/seed', (req, res) => {
+router.get('/index/seed', (req, res) => {
     Band.create(
         [
             {
                 name: "Mumford and Sons",
                 origin: "London, England",
                 single: "Little Lion Man",
-                genre: "folk rock",
+                genre: "folk / rock",
                 themes: "",
-                video: ""
+                video: "https://www.youtube.com/watch?v=lLJf9qJHR3E"
             },
             {
                 name: "Old Crow Medicine Show",
                 origin: "Boone, North Carolina",
                 single: "Wagon Wheel",
-                genre: "Americana bluegrass",
-                themes: "addiction, mental health",
-                video: ""
+                genre: "Americana / bluegrass",
+                themes: "addiction / mental health",
+                video: "https://www.youtube.com/watch?v=1gX1EP6mG-E"
             },
             {
                 name: "Nickel Creek",
-                origin: "",
-                single: "",
-                genre: "",
+                origin: "Carlsbad, California",
+                single: "This Side",
+                genre: "Americana / folk / bluegrass",
                 themes: "",
-                video: ""
+                video: "https://www.youtube.com/watch?v=_nneEIX59I8"
             },
             {
                 name: "Our Native Daughters",
-                origin: "",
-                single: "",
-                genre: "",
-                themes: "black struggles",
-                video: "",
+                origin: "Lafayette, Louisiana",
+                single: "Black Myself",
+                genre: "struggle & protest / bluegrass / Americana / folk",
+                themes: "black struggles / historic and modern-day slavery",
+                video: "https://www.youtube.com/watch?v=vjd9zlSiHZM",
             },
             {
-                name: "Riannon Giddons",
-                origin: "",
-                single: "",
-                genre: "",
+                name: "Rhiannon Giddens",
+                origin: "Greensboro, North Carolina",
+                single: "Little Margaret",
+                genre: "bluegrass / old-time mountain / blues",
                 themes: "fusion of mountain sounds with indigenous instruments",
-                video: ""
+                video: "https://www.youtube.com/watch?v=e2h8K2eHS5w"
             },
             {
-                name: "Abigale Washburn",
-                origin: "",
-                single: "",
-                genre: "",
-                themes: "partnering with ",
-                video: "",
+                name: "Wu Fei & Abigail Washburn",
+                origin: "Beijing, China/Evanston, Illinois",
+                single: "Water is Wide/Wusuli Boat Song",
+                genre: "'kung-fu Appalachian' / folk-rock",
+                themes: "fusion of traditional Chinese folk music with Appalachian mountain music",
+                video: "https://www.youtube.com/watch?v=jS0qh5x8WfQ"
+            },
+            {
+                name: "The Highwomen",
+                origin: "Nashville, Tennessee",
+                single: "Highwomen",
+                genre: "country / Americana",
+                themes: "LGBTQIA+ story telling / non-traditional female roles in society",
+                video: "https://www.youtube.com/watch?v=7D-6nklMMbM"
             },
             {
                 name: "The Carolina Chocolate Drops",
-                origin: "",
-                single: "",
-                genre: "",
-                themes: "",
-                video: ""
+                origin: "Durham, North Carolina",
+                single: "Snowden's Jig",
+                genre: "old-time string / bluegrass / negro spiritual & folk fusion",
+                themes: "bringing attention to black string and folk artists",
+                video: "https://www.youtube.com/watch?v=nliiRDmBbEQ"
             },
             {
                 name: "Tyler Childers",
-                origin: "",
-                single: "",
-                genre: "",
-                themes: "addication, openly discussing progressive political views",
-                video: ""
+                origin: "Lawrence County, Kentucky",
+                single: "Lady May",
+                genre: "neotraditional country/folk/bluegrass",
+                themes: "addication / openly discussing progressive political views / Black Lives Matter",
+                video: "https://www.youtube.com/watch?v=QQ3_AJ5Ysx0"
             },
             {
                 name: "Gangstagrass",
                 origin: "Brooklyn, New York",
                 single: "Long Hard Times to Come",
-                genre: "bluegrass/rap, 'hee-haw hip-hop'",
+                genre: "bluegrass / rap / 'hee-haw hip-hop'",
                 themes: "",
                 video: "https://www.youtube.com/watch?v=cCEHQ_nhxOA"
             },
