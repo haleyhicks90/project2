@@ -75,6 +75,24 @@ router.get('/index/seed', (req, res) => {
                 video: "https://www.youtube.com/watch?v=lLJf9qJHR3E"
             },
             {
+                name: "Gangstagrass",
+                image: "https://riffmagazine.com/wp-content/uploads/2021/02/gangstagrass1208.jpg",
+                origin: "Brooklyn, New York",
+                single: "Long Hard Times to Come",
+                genre: "bluegrass / rap / 'hee-haw hip-hop'",
+                themes: "",
+                video: "https://www.youtube.com/watch?v=cCEHQ_nhxOA"
+            },
+            {
+                name: "Our Native Daughters",
+                image: "https://media.npr.org/assets/img/2019/02/11/thf037-native-daughters_wide-48b5445b710da3b22be959add4435f68341fab82.jpg?s=1400",
+                origin: "Lafayette, Louisiana",
+                single: "Black Myself",
+                genre: "struggle & protest / bluegrass / Americana / folk",
+                themes: "black struggles / historic and modern-day slavery",
+                video: "https://www.youtube.com/watch?v=vjd9zlSiHZM",
+            },
+            {
                 name: "Old Crow Medicine Show",
                 image: "https://cdn.wegow.com/media/artists/old-crow-medicine-show/old-crow-medicine-show-1492559873.92.2560x1440.jpg",
                 origin: "Boone, North Carolina",
@@ -91,15 +109,6 @@ router.get('/index/seed', (req, res) => {
                 genre: "Americana / folk / bluegrass",
                 themes: "",
                 video: "https://www.youtube.com/watch?v=_nneEIX59I8"
-            },
-            {
-                name: "Our Native Daughters",
-                image: "https://media.npr.org/assets/img/2019/02/11/thf037-native-daughters_wide-48b5445b710da3b22be959add4435f68341fab82.jpg?s=1400",
-                origin: "Lafayette, Louisiana",
-                single: "Black Myself",
-                genre: "struggle & protest / bluegrass / Americana / folk",
-                themes: "black struggles / historic and modern-day slavery",
-                video: "https://www.youtube.com/watch?v=vjd9zlSiHZM",
             },
             {
                 name: "Rhiannon Giddens",
@@ -146,16 +155,6 @@ router.get('/index/seed', (req, res) => {
                 themes: "addication / openly discussing progressive political views / Black Lives Matter",
                 video: "https://www.youtube.com/watch?v=QQ3_AJ5Ysx0"
             },
-            {
-                name: "Gangstagrass",
-                image: "https://riffmagazine.com/wp-content/uploads/2021/02/gangstagrass1208.jpg",
-                origin: "Brooklyn, New York",
-                single: "Long Hard Times to Come",
-                genre: "bluegrass / rap / 'hee-haw hip-hop'",
-                themes: "",
-                video: "https://www.youtube.com/watch?v=cCEHQ_nhxOA"
-            },
-
         ],
         (error, data) => {
             res.redirect('/index')

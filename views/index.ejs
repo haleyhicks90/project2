@@ -15,7 +15,8 @@
         <h4>Striving to bring the names of progressive artists and bands to the foreground and celebrate the various countries, races, and experiences these artists bring to the table.</h4>
 
         <nav>
-            <a class="button" href="/index/new">Add a Band</a>
+            <a style="background-color:#FABDA5;color:white;" class="button" href="/index/new">Add a Band</a>
+
         </nav>
 
         <table class="u-full-width">
@@ -35,24 +36,19 @@
                         <td><img style="width:500px;height:auto;" src="<%=bands[i].image%>"</td>
                         <td><%=bands[i].name%></td>
 
-                        <!-- view/edit/delete buttons -->
+                        <!-- view/delete buttons -->
 
                         <!-- view -->
                         <td>
-                            <form action="/index/<%=bands[i]._id%>" method="POST">
-                                <input type="submit" value="View Band">
+                            <form action="/index/<%=bands[i]._id%>" method="GET">
+                                <input class="button-primary" type="submit" value="View Band">
                             </form>
-                        </td>
-
-                        <!-- edit -->
-                        <td>
-                            <a class="button" href="/index/<%=bands[i]._id%>/edit">Edit</a>
                         </td>
 
                         <!-- delete -->
                         <td>
                             <form action="/index/<%=bands[i]._id%>?_method=DELETE" method=POST>
-                                <input type="submit" value="DELETE">
+                                <input style="background-color:#B5403A;color:white;" type="submit" value="Delete Band">
                             </form>
                         </td>
                     </tr>

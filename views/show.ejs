@@ -9,17 +9,46 @@
 
     </head>
     <body>
-        <h1>Show Page</h1>
+        <div>
 
-        Name: <%=band.name%><br>
-        Origin: <%=band.origin%><br>
-        Single: <%=band.single%><br>
-        Genre: <%=band.genre%><br>
-        Notable Themes: <%=band.themes%><br>
-        <video width="320" height="240" controls>
-            <source src="<%=band.video%>" type="video/mp4">
-        </video>
-        <!-- Video: <%=band.video%><br> -->
+            <h3><%=band.name%></h3>
+
+            <img src="<%=band.image%>">
+            <br>
+
+            <div class="row">
+                <div class="six columns">
+                    <h5>Origin:</h5>
+                    <h6><%=band.origin%></h6>
+                <div class="six columns">
+                    <h5>Single:</h5>
+                    <h6><%=band.single%></h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <h5>Genre:</h5>
+                    <h6><%=band.genre%></h6>
+                </div>
+                <div class="six columns">
+                    <h5>Notable Themes:</h5>
+                    <h6><%=band.themes%></h6>
+                </div>
+            </div>
+
+            <div>
+                <h5>Video:</h5>
+                <a href="<%=band.video%>">
+                    <h6><%=band.video%></h6>
+                </a>
+            </div>
+
+        </div>
+
+
+
+
 
     </body>
 </html>
