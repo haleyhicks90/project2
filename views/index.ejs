@@ -8,13 +8,15 @@
         <!-- skeleton framework -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
-        <!-- partials -->
-
     </head>
     <body>
         <h1>Modern Mountain Music</h1>
 
         <h4>Striving to bring the names of progressive artists and bands to the foreground and celebrate the various countries, races, and experiences these artists bring to the table.</h4>
+
+        <nav>
+            <a class="button" href="/index/new">Add a Band</a>
+        </nav>
 
         <table class="u-full-width">
             <thead>
@@ -22,21 +24,23 @@
                     <th>Image</th>
                     <th>Name</th>
                     <th>Would you like to...</th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <% for (let i = 0; i < bands.length; i ++) { %>
                     <tr>
                         <!-- imgage and name -->
-                        <td><img src="<%=bands[i].image%>"</td>
+                        <td><img style="width:500px;height:auto;" src="<%=bands[i].image%>"</td>
                         <td><%=bands[i].name%></td>
 
                         <!-- view/edit/delete buttons -->
 
                         <!-- view -->
                         <td>
-                            <form action="/index/:id" method="post">
-
+                            <form action="/index/<%=bands[i]._id%>" method="POST">
+                                <input type="submit" value="View Band">
                             </form>
                         </td>
 
@@ -55,9 +59,5 @@
                 <% } %>
             </tbody>
         </table>
-
-        <nav>
-            <a href="/index/new">Add a Band</a>
-        </nav>
     </body>
 </html>

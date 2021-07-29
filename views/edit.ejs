@@ -10,14 +10,66 @@
     </head>
     <body>
         <h1>Edit Page</h1>
-        <form>
-            Name: <input type="text" name="name" value="<%=band.name%>" /><br>
-            Origin: <input type="text" name="origin" value="<%=band.origin%>" /><br>
-            Single: <input type="text" name="single" value="<%=band.single%>" /><br>
-            Genre: <input type="text" name="genre" value="<%=band.genre%>" /><br>
-            Notable Themes: <input type="text" name="themes" value="<%=band.themes%>" /><br>
-            New Video: <input type="text" name="video" value="" /><br>
-            <input type="submit" value="Update Band">
+
+        <form class="container">
+            <div class="row">
+                <div class="six columns">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="<%=band.name%>"
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <label for="image">New Image</label>
+                    <input type="text" name="image" placeholder="<%=band.image%>"
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="six columns">
+                    <label for="origin">Origin</label>
+                    <input type="text" name="origin" placeholder="<%=band.origin%>"
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <label for="single">Single</label>
+                    <input type="text" name="single" placeholder="<%=band.single%>"
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <label for="genre">Genre</label>
+                    <input type="text" name="genre" placeholder="<%=band.genre%>"
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <label for="themes">Notable Themes</label>
+                    <input type="text" name="themes" placeholder="<%=band.themes%>"
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <label for="video">New Video</label>
+                    <input type="text" name="video" placeholder="<%=band.video%>"
+                </div>
+            </div>
         </form>
+
+        <form>
+            <input class="button-primary" type="submit" value="Update Band">
+            <a style="background-color:red;color:white;" class="button" href="/index/:id">Cancel</a>
+        </form>
+
+        <nav>
+            <a style="background-color:#7B8F6B;color:white;" class="button" href="/index/">Home</a>
+        </nav>
+
     </body>
 </html>
