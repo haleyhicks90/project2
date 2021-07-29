@@ -1,5 +1,5 @@
 # Unit 2 Project
-## "Modern Mountain Music"
+## :violin:"Modern Mountain Music":banjo:
 ### Haley Hicks
 
 add user story
