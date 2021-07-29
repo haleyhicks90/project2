@@ -8,15 +8,18 @@
         <!-- skeleton framework -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
+        <!-- partials -->
+        <%- include ('./partials/head.ejs') %>
+        <%- include ('./partials/header.ejs') %>
+
     </head>
     <body>
-        <h1>Modern Mountain Music</h1>
-
-        <h4>Striving to bring the names of progressive artists and bands to the foreground and celebrate the various countries, races, and experiences these artists bring to the table.</h4>
+        <br>
+        <h4>We strive to bring the names of progressive artists and bands to the foreground and celebrate the various countries, races, and experiences these artists bring to the table.</h4>
+        <br>
 
         <nav>
-            <a style="background-color:#FABDA5;color:white;" class="button" href="/index/new">Add a Band</a>
-
+            <a style="background-color:#FABDA5;color:#434D28;" class="button" href="/index/new">Add a Band</a>
         </nav>
 
         <table class="u-full-width">
@@ -34,21 +37,23 @@
                     <tr>
                         <!-- imgage and name -->
                         <td><img style="width:500px;height:auto;" src="<%=bands[i].image%>"</td>
-                        <td><%=bands[i].name%></td>
+                        <td>
+                            <h5><%=bands[i].name%><h5>
+                        </td>
 
                         <!-- view/delete buttons -->
 
                         <!-- view -->
                         <td>
                             <form action="/index/<%=bands[i]._id%>" method="GET">
-                                <input class="button-primary" type="submit" value="View Band">
+                                <input style="background-color:#F29F05;" class="button" type="submit" value="View Band">
                             </form>
                         </td>
 
                         <!-- delete -->
                         <td>
                             <form action="/index/<%=bands[i]._id%>?_method=DELETE" method=POST>
-                                <input style="background-color:#B5403A;color:white;" type="submit" value="Delete Band">
+                                <input style="background-color:#733614;color:white;" type="submit" value="Delete Band">
                             </form>
                         </td>
                     </tr>

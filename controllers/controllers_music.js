@@ -66,15 +66,6 @@ router.get('/index/seed', (req, res) => {
     Band.create(
         [
             {
-                name: "Mumford and Sons",
-                image: "https://pyxis.nymag.com/v1/imgs/f7c/89f/1a40aaab35e24b88cc47022ae354b1c297-01-mumford-and-sons-2.rsocial.w1200.jpg",
-                origin: "London, England",
-                single: "Little Lion Man",
-                genre: "folk / rock",
-                themes: "",
-                video: "https://www.youtube.com/watch?v=lLJf9qJHR3E"
-            },
-            {
                 name: "Gangstagrass",
                 image: "https://riffmagazine.com/wp-content/uploads/2021/02/gangstagrass1208.jpg",
                 origin: "Brooklyn, New York",
@@ -154,6 +145,15 @@ router.get('/index/seed', (req, res) => {
                 genre: "neotraditional country/folk/bluegrass",
                 themes: "addication / openly discussing progressive political views / Black Lives Matter",
                 video: "https://www.youtube.com/watch?v=QQ3_AJ5Ysx0"
+            },
+            {
+                name: "Mumford and Sons",
+                image: "https://pyxis.nymag.com/v1/imgs/f7c/89f/1a40aaab35e24b88cc47022ae354b1c297-01-mumford-and-sons-2.rsocial.w1200.jpg",
+                origin: "London, England",
+                single: "Little Lion Man",
+                genre: "folk / rock",
+                themes: "",
+                video: "https://www.youtube.com/watch?v=lLJf9qJHR3E"
             },
         ],
         (error, data) => {

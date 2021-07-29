@@ -7,6 +7,10 @@
         <!-- skeleton framework -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
+        <!-- partials -->
+        <%- include ('./partials/head.ejs') %>
+        <%- include ('./partials/header.ejs') %>
+
     </head>
     <body>
         <h1>New Page</h1>
@@ -18,8 +22,12 @@
             Origin: <input type="text" name="origin" /><br>
             Genre: <input type="text" name="genre" /><br>
             Video: <input type="text" name="video" /><br>
-            <input type="submit" value="Add Band"><br>
+            <input style="background-color:#FABDA5;color:#434D28;" type="submit" value="Add Band"><br>
         </form>
+
+        <nav>
+            <a style="background-color:#A65D03;color:#F2B705;" class="button" href="/index">Home</a>
+        </nav>
 
     </body>
 </html>

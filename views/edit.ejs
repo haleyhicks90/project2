@@ -7,57 +7,62 @@
         <!-- skeleton framework -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
+        <!-- partials -->
+        <%- include ('./partials/head.ejs') %>
+        <%- include ('./partials/header.ejs') %>
+
+
     </head>
     <body>
-        <h1>Edit Page</h1>
+        <h1 class="container">Edit <%=band.name%></h1><br>
 
         <form class="container" action="/index/<%=band.id%>?_method=PUT" method="POST">
             <div class="row">
                 <div class="six columns">
                     <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="<%=band.name%>"
+                    <input type="text" name="name" value="<%=band.name%>"
                 </div>
             </div>
 
             <div class="row">
                 <div class="six columns">
                     <label for="image">New Image</label>
-                    <input type="text" name="image" placeholder="<%=band.image%>"
+                    <input type="text" name="image" value="<%=band.image%>"
                 </div>
             </div>
 
              <div class="row">
                 <div class="six columns">
                     <label for="origin">Origin</label>
-                    <input type="text" name="origin" placeholder="<%=band.origin%>"
+                    <input type="text" name="origin" value="<%=band.origin%>"
                 </div>
             </div>
 
             <div class="row">
                 <div class="six columns">
                     <label for="single">Single</label>
-                    <input type="text" name="single" placeholder="<%=band.single%>"
+                    <input type="text" name="single" value="<%=band.single%>"
                 </div>
             </div>
 
             <div class="row">
                 <div class="six columns">
                     <label for="genre">Genre</label>
-                    <input type="text" name="genre" placeholder="<%=band.genre%>"
+                    <input type="text" name="genre" value="<%=band.genre%>"
                 </div>
             </div>
 
             <div class="row">
                 <div class="six columns">
                     <label for="themes">Notable Themes</label>
-                    <input type="text" name="themes" placeholder="<%=band.themes%>"
+                    <input type="text" name="themes" value="<%=band.themes%>"
                 </div>
             </div>
 
             <div class="row">
                 <div class="six columns">
                     <label for="video">New Video</label>
-                    <input type="text" name="video" placeholder="<%=band.video%>"
+                    <input type="text" name="video" value="<%=band.video%>"
                 </div>
             </div>
             <input class="button-primary" type="submit" value="Update Band">
@@ -65,7 +70,7 @@
 
 
         <form action="/index/<%=band._id%>" method="GET">
-            <input style="background-color:#B5403A;color:white;" class="button" type="submit" value="Cancel">
+            <input style="background-color:#733614;color:white;" class="button" type="submit" value="Cancel">
             <a style="background-color:#7B8F6B;color:white;" class="button" href="/index/">Home</a>
         </form>
 

@@ -7,13 +7,18 @@
         <!-- skeleton framework -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
+        <!-- partials -->
+        <%- include ('./partials/head.ejs') %>
+        <%- include ('./partials/header.ejs') %>
+
+
     </head>
     <body>
         <div>
 
             <h3><%=band.name%></h3>
 
-            <img src="<%=band.image%>">
+            <img style="width:800px;height:auto;" src="<%=band.image%>">
             <br>
 
             <div class="row">
@@ -53,8 +58,8 @@
 
         </div>
 
-        <a class="button" href="/index/<%=band._id%>/edit">Edit</a>
-        <a class="button" href="/index">Home</a>
+        <a style="background-color:#A65D03;" class="button" href="/index/<%=band._id%>/edit">Edit</a>
+        <a style="background-color:#A6F1F5;" class="button" href="/index">Home</a>
 
     </body>
 </html>
