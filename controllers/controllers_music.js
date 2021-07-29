@@ -67,6 +67,7 @@ router.get('/index/seed', (req, res) => {
         [
             {
                 name: "Mumford and Sons",
+                image: "https://pyxis.nymag.com/v1/imgs/f7c/89f/1a40aaab35e24b88cc47022ae354b1c297-01-mumford-and-sons-2.rsocial.w1200.jpg",
                 origin: "London, England",
                 single: "Little Lion Man",
                 genre: "folk / rock",
@@ -75,6 +76,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "Old Crow Medicine Show",
+                image: "https://cdn.wegow.com/media/artists/old-crow-medicine-show/old-crow-medicine-show-1492559873.92.2560x1440.jpg",
                 origin: "Boone, North Carolina",
                 single: "Wagon Wheel",
                 genre: "Americana / bluegrass",
@@ -83,6 +85,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "Nickel Creek",
+                image: "https://variety.com/wp-content/uploads/2020/09/1606398_700923673286176_304047665_o-e1599775726346.jpeg?w=1000",
                 origin: "Carlsbad, California",
                 single: "This Side",
                 genre: "Americana / folk / bluegrass",
@@ -91,6 +94,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "Our Native Daughters",
+                image: "https://media.npr.org/assets/img/2019/02/11/thf037-native-daughters_wide-48b5445b710da3b22be959add4435f68341fab82.jpg?s=1400",
                 origin: "Lafayette, Louisiana",
                 single: "Black Myself",
                 genre: "struggle & protest / bluegrass / Americana / folk",
@@ -99,6 +103,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "Rhiannon Giddens",
+                image: "http://gardenandgun.com/wp-content/uploads/2020/03/GG0220_SavingSouthHeros_01-scaled.jpg",
                 origin: "Greensboro, North Carolina",
                 single: "Little Margaret",
                 genre: "bluegrass / old-time mountain / blues",
@@ -107,6 +112,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "Wu Fei & Abigail Washburn",
+                image: "https://creativeloafing.com/dl31428?display&x=1040&y=743",
                 origin: "Beijing, China/Evanston, Illinois",
                 single: "Water is Wide/Wusuli Boat Song",
                 genre: "'kung-fu Appalachian' / folk-rock",
@@ -115,6 +121,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "The Highwomen",
+                image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/highwomen-lede-1567551852.png?resize=480:*",
                 origin: "Nashville, Tennessee",
                 single: "Highwomen",
                 genre: "country / Americana",
@@ -123,6 +130,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "The Carolina Chocolate Drops",
+                image: "https://foodcorps.org/cms/assets/uploads/2016/01/Carolina-Chocolate-Drops-2012-Credit-Michele-Crowe.jpg",
                 origin: "Durham, North Carolina",
                 single: "Snowden's Jig",
                 genre: "old-time string / bluegrass / negro spiritual & folk fusion",
@@ -131,6 +139,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "Tyler Childers",
+                image: "https://yt3.ggpht.com/ytc/AKedOLSuwUwu8REC3Qkq9DtwpcaunsRvZF66ZW3DIKubKA=s900-c-k-c0x00ffffff-no-rj",
                 origin: "Lawrence County, Kentucky",
                 single: "Lady May",
                 genre: "neotraditional country/folk/bluegrass",
@@ -139,6 +148,7 @@ router.get('/index/seed', (req, res) => {
             },
             {
                 name: "Gangstagrass",
+                image: "https://riffmagazine.com/wp-content/uploads/2021/02/gangstagrass1208.jpg",
                 origin: "Brooklyn, New York",
                 single: "Long Hard Times to Come",
                 genre: "bluegrass / rap / 'hee-haw hip-hop'",

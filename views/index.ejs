@@ -2,26 +2,59 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Modern Mountain Sounds</title>
+
+        <!-- skeleton framework -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+        <!-- partials -->
+
     </head>
     <body>
         <h1>Modern Mountain Music</h1>
 
         <h4>Striving to bring the names of progressive artists and bands to the foreground and celebrate the various countries, races, and experiences these artists bring to the table.</h4>
 
-        <ul>
-            <% for (let i = 0; i < bands.length; i ++) { %>
-                <li>
-                    <a href="/index/<%=bands[i]._id%>">
-                        <%=bands[i].name%>
-                    </a>
-                    <form action="/index/<%=bands[i]._id%>?_method=DELETE" method=POST>
-                        <input type="submit" value="DELETE">
-                    </form>
-                    <a href="/index/<%=bands[i]._id%>/edit">Edit</a>
-                </li>
-            <% } %>
-        </ul>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Would you like to...</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let i = 0; i < bands.length; i ++) { %>
+                    <tr>
+                        <!-- imgage and name -->
+                        <td><img src="<%=bands[i].image%>"</td>
+                        <td><%=bands[i].name%></td>
+
+                        <!-- view/edit/delete buttons -->
+
+                        <!-- view -->
+                        <td>
+                            <form action="/index/:id" method="post">
+
+                            </form>
+                        </td>
+
+                        <!-- edit -->
+                        <td>
+                            <a class="button" href="/index/<%=bands[i]._id%>/edit">Edit</a>
+                        </td>
+
+                        <!-- delete -->
+                        <td>
+                            <form action="/index/<%=bands[i]._id%>?_method=DELETE" method=POST>
+                                <input type="submit" value="DELETE">
+                            </form>
+                        </td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
 
         <nav>
             <a href="/index/new">Add a Band</a>

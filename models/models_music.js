@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 //Location Schema
 const musicSchema = new mongoose.Schema ({
     name: {type: String, required: true},
+    image: String,
     origin: String,
     single: String,
     genre: String,
