@@ -20,6 +20,10 @@
                 <div class="six columns">
                     <h5>Origin:</h5>
                     <h6><%=band.origin%></h6>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="six columns">
                     <h5>Single:</h5>
                     <h6><%=band.single%></h6>
@@ -31,6 +35,9 @@
                     <h5>Genre:</h5>
                     <h6><%=band.genre%></h6>
                 </div>
+            </div>
+
+            <div class="row">
                 <div class="six columns">
                     <h5>Notable Themes:</h5>
                     <h6><%=band.themes%></h6>
@@ -46,9 +53,8 @@
 
         </div>
 
-
-
-
+        <a class="button" href="/index/<%=band._id%>/edit">Edit</a>
+        <a class="button" href="/index">Home</a>
 
     </body>
 </html>

@@ -11,7 +11,7 @@
     <body>
         <h1>Edit Page</h1>
 
-        <form class="container">
+        <form class="container" action="/index/<%=band.id%>?_method=PUT" method="POST">
             <div class="row">
                 <div class="six columns">
                     <label for="name">Name</label>
@@ -60,16 +60,17 @@
                     <input type="text" name="video" placeholder="<%=band.video%>"
                 </div>
             </div>
-        </form>
-
-        <form>
             <input class="button-primary" type="submit" value="Update Band">
-            <a style="background-color:#B5403A;color:white;" class="button" href="/index/:id">Cancel</a>
         </form>
 
-        <nav>
+
+        <form action="/index/<%=band._id%>" method="GET">
+            <input style="background-color:#B5403A;color:white;" class="button" type="submit" value="Cancel">
             <a style="background-color:#7B8F6B;color:white;" class="button" href="/index/">Home</a>
-        </nav>
+        </form>
+
+
+
 
     </body>
 </html>
