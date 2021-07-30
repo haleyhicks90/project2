@@ -40,6 +40,8 @@ The user has the ability to navigate through the app. They can view band's indiv
     - I wanted to figure out a way for the user to be able to play audio or watch a video on the show page.  
     - I would have liked to style with cards, rather than a table or lists.
     - I would redo/update the header so it doesn't have that ugly "Canva" bar below it.
+    - I would redirect the user to the show page after submitting an update
+    - I would find a way to keep the page from going back to the top every time a band was deleted
 
 
 This app is hosted on [HEROKU](https://enigmatic-plateau-93663.herokuapp.com/index)
