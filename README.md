@@ -9,9 +9,9 @@ I began this project with an entirely different idea, but I couldn't stop thinki
 
 The Modern Mountain Music app was designed to introduce the user to a handful of bluegrass-adjacent artists who not only put out amazing music but who also use their lyrics to introduce progressive subject matter to their audiences.
 This subject matter includes but is not limited to:
-    - addiction
-    - LGBT storytelling
-    - slavery
+- addiction
+- LGBT storytelling
+- slavery
 
 The user has the ability to navigate through the app. They can view band's individual pages, edit information about the bands, delete a band, and add a new band.  
 
@@ -23,7 +23,7 @@ The user has the ability to navigate through the app. They can view band's indiv
     - JavaScript
     - Node.js
     - Mongoose
-    - xpress
+    - Express
     - EJS
 
 ### Skills Implemented
