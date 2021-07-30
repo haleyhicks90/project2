@@ -4,13 +4,13 @@
 
 This app was made in an effort to demonstrate the knowledge I've learned thus far in General Assembly's SEIR course. This is a Unit 2 Project.
 
-The idea for this app came to me after being inspired by a previous student's "Decolonize my Audition" app that was used as an example of other student's Unit 2 Projects.
+The idea for this app came to me after being inspired by a previous student's "Decolonize My Audition" app that was used as an example of other student's Unit 2 Projects.
 I began this project with an entirely different idea, but I couldn't stop thinking about this subject matter and figured I might as well build the app around a topic I am passionate about.
 
 The Modern Mountain Music app was designed to introduce the user to a handful of bluegrass-adjacent artists who not only put out amazing music but who also use their lyrics to introduce progressive subject matter to their audiences.
 This subject matter includes but is not limited to:
 - addiction
-- LGBT storytelling
+- LGBT+ storytelling
 - slavery
 
 The user has the ability to navigate through the app. They can view band's individual pages, edit information about the bands, delete a band, and add a new band.  
